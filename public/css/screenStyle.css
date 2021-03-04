@@ -21,16 +21,16 @@ body{
 h1{
     width: 70%;
 }
-#pictures{
+.pictures{
     max-width: 600px;
     width: 100%;
 }
-#picturesVedlaSeba{
+.picturesVedlaSeba{
     max-width: 400px;
     width: 100%;
     margin: 20px;
 }
-#picturesnaVysku{
+.picturesnaVysku{
     max-width: 300px;
     width: 100%;
     margin: 20px;
