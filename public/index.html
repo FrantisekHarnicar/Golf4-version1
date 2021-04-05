@@ -33,8 +33,8 @@
           <div class="uvod_position">
             <img id="uvod_obrazok_id" src="fig/idea_bulb.png" alt="idea_bulb"/>
             <p id="uvod_text">
-              Moj blog sa bude venovat jednemu specialnemu autu. Je to VW golf stvrtej generacie vyrovbeny v roku 2003 s motorom 1.9 TDI. 
-              Konkretne tento blog bude o jeho upravach a postupu prace na nom. Verim ze vas to bude bavit.
+              Môj blog sa bude venovať jednému špeciálnemu autu. Je to VW golf štvrtej generácie vyrobený v roku 2003 s motorom 1.9 TDI. 
+              Konkrétne tento blog bude o jeho úpravách a postupu prace na ňom. Verím že vás to bude baviť.
             </p>
           </div>
       </div>
@@ -44,11 +44,11 @@
           <div class="strucny_opis_clanku">
               <h2>
                 <a href="article1.html">
-                Calunenie stropnice
+                Čalunenie stropnice
                 </a>
               </h2>
               <p>
-                V tomto clanku sa pozrieme na calunenie stropnice. Konkretne pojde o postup prace a vysledne cena prerabky.
+                V tomto článku sa pozrieme na čalúnenie stropných. Konkrétne pôjde o postup prace a výsledne cena prerábky.
               </p>
             </div>
               <a href="article1.html"><img class="obr_clanok_main" src="fig/Finnal.jpg" alt=""/></a>
@@ -59,12 +59,11 @@
             <div class="strucny_opis_clanku">              
                 <h2>
                   <a href="article2.html">
-                    Znizenie podvozku
+                    Zníženie podvozku
                     </a>
                 </h2>             
                 <p>
-                  Znizenie podvozku bola vec nad ktorou som vela premyslal, ale nakoniec sam to spachal a tu je vysledok 
-                  mojej prace.
+                  Zníženie podvozku bola vec nad ktorou som veľa premýšľal, ale nakoniec som to spáchal a tu je výsledok mojej prace.
                 </p>
               </div>
                 <a href="article2.html"><img class="obr_clanok_main" src="fig/cele_auto_po.jpg" alt=""/></a>
@@ -74,17 +73,104 @@
               <div class="strucny_opis_clanku">                
                   <h2>
                     <a href="article3.html">
-                      Odhlucnenie dverí
+                      Odhlučnenie dverí
                       </a>
                   </h2>
                   <p>
-                    Odhlucnenie dveri je tema, ktora nie je az tak sirokej verejnosti znama a preto si myslim ze 
-                    clanok k nej nesmie na mojom blogu chybat.
+                    Odhlučnenie dverí je téma, ktorá nie je až tak širokej verejnosti známa a preto si myslím že 
+                    článok k nej nesmie na mojom blogu chýbať.
                   </p>
                 </div>
                   <a href="article3.html"><img class="obr_clanok_main" src="fig/dvere_po_2.jpg" alt=""/></a>
               </div>
         </div>
+
+
+        <article  id="artOpinions">
+          <h2 class="parts">Komentare</h2>
+          <div id="opinionsContainer">
+
+          </div>
+         
+      </article>
+
+        <form method="get" target="frmRes" id="formular">
+          <h3>Tu mi mozes zanechat komentar</h2>
+          <div class="option">
+            <label for="name">*Meno</label>
+            <span class="name">
+                <input class="pole" type="text" name="name" id="name"  
+                      title="max. 50 znakov" maxlength="50"
+                      required
+                      spellcheck="true" lang="sk"
+                      autocomplete="on"
+                      placeholder="Meno Priezvisko"
+
+                />
+            </span>
+          </div>
+
+          <div class="option">
+            <label for="email">*E-mail</label>
+            <span >
+                <input class="pole" type="email" name="email" id="email"  
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                      required
+                      spellcheck="true" lang="sk"
+                      autocomplete="on"
+                      placeholder="golf@gmail.com"
+
+                />
+            </span>
+          </div>
+
+          <div class="option">
+            <label for="url">Url obrazka</label>
+            <span >
+                <input class="pole" type="url" name="url" id="url"  />
+            </span>
+          </div>
+
+          <div class="option">
+            <label for="pohlavie">Pohlavie</label>
+            <input type="radio" name="pohlavie" id="muz"  value="0" />
+            <label for="muz">Muz</label>
+            <input type="radio" name="pohlavie" id="zena"  value="1"/>
+            <label for="zena">Zena</label>
+          </div>
+        
+          <div class="option">
+            <label for="comment">*Tu mozes napisat svoj nazor na blog</label>
+            <textarea name="comment" id="comment"
+                      spellcheck="true" lang="sk"
+                      placeholder="Tu mozes nieco pekne napisat"
+                      required
+                      >
+            </textarea>
+          </div>
+
+          <div class="option">
+            <input type="checkbox" name="podmienky" id="osobne_udaje"
+                    required
+                    >
+            <label for="osobne_udaje">*Suhlasim so spracovanim osobnych udajov</label>
+          </div>
+
+          <div class="option">
+            <input type="checkbox" name="podmienky" id="email_novinky">
+            <label for="email_novinky">Suhlasim s posielanim noviniek o blogu na spomenuty E-mail</label>
+          </div>
+          <p>
+            <b>*povinne polia</b>
+          </p>
+          <div class="option">
+            <input  type="reset" value="Zmaž" />
+            <input  type="submit" value="Odoslať" />
+          </div>
+        </form>
+          
+        
+      
       </main>
     </div>
 
@@ -92,5 +178,24 @@
     <footer>
       Všetky práva vyhradené © 2021 <a id="footer_text" href="mailto:franek1370@gmail.com">Frantisek Harnicar</a>
     </footer>
+    <script type="module" src="js/main.js"></script>
+
+    <script id="mTmplOneOpinion" type="text/template">
+      <section>
+        <div id="name_date">
+          <div id="formular_sex_name">
+            <p id="formular_name">{{name}} <p id="sex">{{sex}}</p></p>
+          </div>
+          <p id="date"><i>{{createdDate}}</i></p>
+        </div>
+        <div id="formular_comment">
+          <p>{{comment}}</p>
+          <p id="formular_obrazok"><b>Obrazok url:</b> {{url}}</p>
+          <p id="formular_email"><b>E-mail:</b> {{email}}</p>
+        </div>
+      </section>
+  </script>  
+
+   
   </body>
 </html>
