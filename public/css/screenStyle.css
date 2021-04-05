@@ -404,6 +404,13 @@ section{
     padding: 0.3em;
     background-color:  #eeeeee;
 }
+.button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 2em;
+    padding-right: 2em;
+}
 
 
 
