@@ -201,6 +201,7 @@ footer{
     bottom: 0;
     margin-bottom: 0;
     margin-top: 1.5em;
+    border-top: 3px solid #FFF102;
 }
 #footer_text{
     text-align: center;
@@ -279,5 +280,134 @@ ul{
         padding-left: 0;
     }
 }
+
+/**********************
+*******FORMULAR********
+**********************/
+
+#formular{
+    margin-top: 1em;
+    padding: 1em;
+    flex-direction: column;
+    display: flex;
+    text-align: left;
+    border: 2px solid #bdbebd;
+
+}
+.option{
+    flex-direction: row;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+}
+:required, :optional {
+    border: solid #d6d6d6;
+}
+
+#email, #name, #url{
+    width: 40%;
+}
+@media (max-width: 900px){
+    #email, #name, #url{
+        width: 90%;
+    }
+}
+#comment{
+    width: 90%;
+    
+}
+
+.pole:valid{
+    border: 0.18em solid rgba(3, 255, 79, 0.555);
+}
+.pole:invalid{
+    border: 0.18em solid rgba(255, 3, 3, 0.315);
+}
+
+
+
+:out-of-range{
+    color: rgb(255, 0, 0);
+}
+input, textarea{
+    padding: 0.6em 0.9em;
+
+}
+section{
+    border: 2px solid #bdbebd;
+}
+#date{
+    text-decoration-color: #303030;
+    text-shadow: 0.5px 0.5px #5e5e5e;
+}
+#name_date{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #dddddd;
+}
+@media (max-width: 700px){
+    #name_date{
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    #formular_sex_name{
+       flex-wrap: wrap;
+        align-items: center;
+        
+    }
+
+    
+}
+#formular_name{
+    margin-top: 1em;
+    margin-bottom: 0;
+    font-size: 1.3rem;
+    
+    text-decoration-color: #303030;
+    text-shadow: 0.5px 0.5px #5e5e5e;
+    
+}
+#formular_sex_name{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+#sex{
+    font-size: 0.7rem;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 0;
+}
+
+.parts{
+    background-color: #202020;
+    color: #FFF102;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-left: 1em;
+    margin-top: 00.8em;
+}
+#formular_comment{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+#formular_obrazok{
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 0.3em;
+    background-color:  #eeeeee;
+}
+#formular_email{
+    padding: 0.3em;
+    background-color:  #eeeeee;
+}
+
+
+
+
+
 
 
