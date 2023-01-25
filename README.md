@@ -1,8 +1,6 @@
-# Projekt 1 z webových technológií / Web Technologies Project 1 
+# Golf4 Blog
 
-Web stránky statického blogu na vami vybranú tému.
-
-Web pages of a static blog about your own topic. 
+Web stránka statického blogu na tému Golf4.
 
 ---
 ## Popis v Slovenčine
